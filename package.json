@@ -1,0 +1,34 @@
+{
+  "name": "rails-tutorial",
+  "version": "1.0.0",
+  "description": "This is tutorial for Ruby on Rails, including git-flow, TDD, CI",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt-bowercopy": "^1.2.0",
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "grunt": "^0.4.5",
+    "grunt-bowercopy": "^1.2.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.4.1",
+    "grunt-shell": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dobestan/rails-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dobestan/rails-tutorial/issues"
+  },
+  "homepage": "https://github.com/dobestan/rails-tutorial#readme"
+}
