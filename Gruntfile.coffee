@@ -18,6 +18,24 @@ module.exports = (grunt) ->
         command: 'rake test'
 
 
+    watch:
+      app:
+        files: 'app/**/*.rb'
+        tasks: 'test'
+
+
+    notify:
+      rubocop:
+        options:
+          title: 'Success!'
+          message: 'Ruby Style Guide | Success'
+
+      unittest:
+        options:
+          title: 'Success!'
+          message: 'UnitTest | Success'
+
+
   grunt.loadNpmTasks 'grunt-bowercopy'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-shell'
@@ -26,5 +44,12 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'test', [
     'shell:rubocop'
+    'notify:rubocop'
     'shell:unittest'
+    'notify:unittest'
+  ]
+
+  grunt.registerTask 'default', [
+    'bowercopy'
+    'watch'
   ]
